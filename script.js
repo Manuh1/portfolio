@@ -37,7 +37,7 @@ const carousels = [
     },
 ];
 
-const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"];
+const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://i.imgur.com/iVjxCeO.mp4", "https://i.ibb.co/QvXMwjH/thumbnail-ciccio.jpg", "https://i.ibb.co/gTN76BQ/banner-cicciogamer-k.jpg"];
 
 async function LoadCarouselImage(i) {
     return new Promise((resolve) => {
