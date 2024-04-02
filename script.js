@@ -37,7 +37,7 @@ const carousels = [
     },
 ];
 
-const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"];
 
 async function LoadCarouselImage(i) {
     return new Promise((resolve) => {
@@ -90,14 +90,25 @@ $(document).ready(async function () {
     for (let i = 0; i < works.length; i++) {
         $(".works").append(`
         <div>
-           <img src="${works[i].startsWith("http") ? works[i] : `./imgs/${works[i]}`}" alt="">
+            ${
+                works[i].endsWith("mp4")
+                    ? `<video autoplay muted loop src="${works[i].startsWith("http") ? works[i] : `./imgs/${works[i]}`}"></video>`
+                    : `<img src="${works[i].startsWith("http") ? works[i] : `./imgs/${works[i]}`}" alt="">`
+            }
+            
         </div>
         `);
     }
 
     $(".works div").on("click", function () {
+        const url = $(this).children().attr("src");
         $("body").stop(true, true).css("overflow-y", "hidden");
-        $(".fullscreen-work img").stop(true, true).attr("src", $(this).children("img").attr("src"));
+        $(".fullscreen-work img").hide();
+        $(".fullscreen-work video").hide();
+        $(`.fullscreen-work ${url.endsWith("mp4") ? "video" : "img"}`)
+            .stop(true, true)
+            .attr("src", url);
+        $(`.fullscreen-work ${url.endsWith("mp4") ? "video" : "img"}`).show();
         $(".fullscreen-work").stop(true, true).fadeIn(100);
     });
 
