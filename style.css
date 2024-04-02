@@ -466,6 +466,15 @@ body {
     object-fit: cover;
 }
 
+.works div video {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    width: 100%;
+    object-fit: cover;
+}
+
 .contacts {
     margin: 0;
     padding: 0;
@@ -538,6 +547,20 @@ body {
 }
 
 .fullscreen-work img {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 75%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.fullscreen-work video {
     margin: 0;
     padding: 0;
     position: relative;
