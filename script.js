@@ -35,6 +35,15 @@ const carousels = [
         views: "225,284",
         time: "3 giorni fa",
     },
+       {
+        thumb: "thumbnail ciccio.jpg",
+        channel: "CiccioGamer89",
+        channelImg: "manuuxo.jpg",
+        title: "Proviamo il nuovo CACCASPIKE",
+        duration: "26:47",
+        views: "10,723",
+        time: "1 ora fa",
+    },
 ];
 
 const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://i.imgur.com/iVjxCeO.mp4", "https://i.ibb.co/QvXMwjH/thumbnail-ciccio.jpg", "https://i.ibb.co/gTN76BQ/banner-cicciogamer-k.jpg"];
