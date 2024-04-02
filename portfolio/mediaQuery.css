@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+    .navbar .texts h1 {
+        font-size: 12px;
+    }
+
+    .home .mainText h1 {
+        font-size: 30px;
+    }
+
+    .youtube-carousel {
+        width: 80%;
+    }
+
+    .youtube-carousel-videoTitle h1 {
+        font-size: 18px;
+    }
+
+    .youtube-carousel-channelName h1,
+    .youtube-carousel-videoViews h1 {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .works {
+        grid-template-columns: repeat(auto-fill, 90%);
+        grid-auto-rows: calc((100vw - 5px * (1 - 1)) / 1 * 9 / 16);
+        grid-row-gap: 0px;
+    }
+
+    .fullscreen-work img {
+        width: 95%;
+    }
+}
