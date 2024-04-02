@@ -37,7 +37,7 @@ const carousels = [
     },
 ];
 
-const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "4.jpg"];
+const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
 
 async function LoadCarouselImage(i) {
     return new Promise((resolve) => {
