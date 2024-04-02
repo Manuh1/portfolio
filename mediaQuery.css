@@ -29,7 +29,8 @@
         grid-row-gap: 0px;
     }
 
-    .fullscreen-work img {
+    .fullscreen-work img,
+    .fullscreen-work video {
         width: 95%;
     }
 }
