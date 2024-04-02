@@ -90,7 +90,7 @@ $(document).ready(async function () {
     for (let i = 0; i < works.length; i++) {
         $(".works").append(`
         <div>
-            <img src="./imgs/${works[i]}" alt="">
+           <img src="${works[i].startsWith("http") ? works[i] : `./imgs/${works[i]}`}" alt="">
         </div>
         `);
     }
