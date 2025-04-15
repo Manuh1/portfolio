@@ -46,7 +46,7 @@ const carousels = [
     },
 ];
 
-const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://i.imgur.com/iVjxCeO.mp4", "https://imgur.com/tRBio74", "https://imgur.com/dWYIGm2", "https://i.imgur.com/trz4wA5.jpg", "https://i.imgur.com/vIIdx2z.jpg", "https://imgur.com/5Rwqkcf", "https://imgur.com/undefined", "https://imgur.com/rg52hzf"];
+const works = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "https://i.imgur.com/iVjxCeO.mp4", "https://imgur.com/tRBio74", "https://imgur.com/dWYIGm2", "https://i.imgur.com/trz4wA5.jpg", "https://i.imgur.com/vIIdx2z.jpg", "https://imgur.com/5Rwqkcf", "https://imgur.com/undefined", "https://imgur.com/rg52hzf", "poster escher.jpg"];
 
 async function LoadCarouselImage(i) {
     return new Promise((resolve) => {
